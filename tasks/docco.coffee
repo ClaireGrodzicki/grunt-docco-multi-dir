@@ -6,7 +6,7 @@
 # Licensed under the [MIT](http://abovethewater.mit-license.org) licence
 #
 module.exports = (grunt) ->
-  docco = require 'docco'
+  docco = require 'docco-multidir'
 
   grunt.registerMultiTask 'docco', 'Generate multiple linked docs with docco', () ->
 
