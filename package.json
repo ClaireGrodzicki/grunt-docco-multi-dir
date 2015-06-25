@@ -1,14 +1,13 @@
 {
   "name": "grunt-docco-multi-dir",
   "description": "Create a multi-docco that hotlink between all generated input files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://lareg.github.io/grunt-docco-multi-dir",
   "author": {
     "name": "Lare Grodzicki",
     "email": "lare.gr.dev@gmail.com"
   },
-  "contributors": [
-  ],
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "git://github.com/lareg/grunt-docco-multi-dir.git"
