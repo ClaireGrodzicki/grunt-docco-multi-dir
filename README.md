@@ -1,36 +1,29 @@
-[![build status](https://secure.travis-ci.org/abovethewater/grunt-docco-multi.png)](http://travis-ci.org/abovethewater/grunt-docco-multi)
+Grunt-docco-multi-dir is an improvement on grunt-docco-multi and employs some of the desired end results of grunt-docco-dir.  
 
-# NON-WORKING CODE
-This is my first public attempt at coding an npm module.  I'm not really a developer; I just hack at stuff.  Don't install this yet. 
-
-
-# THE README BELOW IS FROM THE ORIGNAL abovethewater/grunt-docco-multi
-
-I am just trying to improve on his/her work.
+Grunt-docco-multi-dir uses a modified version of docco, called docco-multidir.  These changes allow 
 
 
-# grunt-docco-multi
 
-**Grab your markdown comments in your CoffeeScript through [Docco](http://jashkenas.github.io/docco/).**
+## Improvements
+* A new docco option called `projectName` is passed into the template for rendering.  This is coupled with other changes in docco-multidir, which put the full path to the file on the template.
+* Updated the code to use docco-multidir as a dependency, and not docco.
+* Everything else is the same as "grunt-docco-multi" : "~0.0.2"
 
-Differs to grunt-docco in that all files are parsed as one, provide a nice jump-to menu in the output.
-
-This may be a feature in grunt-docco, but that didn't just work out the box
 
 ## Installation
 
 Install npm package, next to your project's Gruntfile:
 
-    npm install --save-dev grunt-docco-multi
+    npm install --save-dev grunt-docco-multi-dir
 
 Add this line to your project's Gruntfile:
 
-    grunt.loadNpmTasks('grunt-docco-multi');
+    grunt.loadNpmTasks('grunt-docco-multi-dir');
 
 
 ## Version
 
-    "grunt-docco-multi" : "~0.0.2"
+    "grunt-docco-multi" : "~1.0.0"
 
 ## Configuration
 
@@ -47,6 +40,7 @@ Add this line to your project's Gruntfile:
       options:
         layout : "parallel"
         output : "docs/"
+        projectName: "{insert your project name here}"
 
       # ## parse multiple files
       all:
@@ -80,7 +74,4 @@ Standard `docco` options are supported
         template:   null
         css:        null
         extension:  null
-
-
-licensed under the [MIT](http://abovethewater.mit-license.org) licence
-(&copy;) 2013 abovethewater
+        projectName: '{insert your project name here}'

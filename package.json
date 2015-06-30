@@ -32,11 +32,12 @@
     "grunt": "~0.4"
   },
   "dependencies": {
-    "docco-multidir": "~0.0.x"
+    "docco-multidir": "^1.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-cli": "~0.1"
+    "grunt-cli": "~0.1",
+    "docco-multidir": "^1.0.0"
   },
   "keywords": [
     "gruntplugin"
