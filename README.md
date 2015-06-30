@@ -22,7 +22,7 @@ Add this line to your project's Gruntfile:
 
 ## Version
 
-    "grunt-docco-multi" : "~1.0.0"
+    "grunt-docco-multi-dir" : "~1.0.3"
 
 ## Configuration
 
