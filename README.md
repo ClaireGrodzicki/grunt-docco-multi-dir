@@ -1,12 +1,11 @@
-Grunt-docco-multi-dir is an improvement on grunt-docco-multi and employs some of the desired end results of grunt-docco-dir.  
-
-Grunt-docco-multi-dir uses a modified version of docco, called docco-multidir.  These changes allow 
-
-
+Grunt-docco-multi-dir allows an arbitrarily deep directory structure for your code, and the jump menu & templates properly reflect that structure. Additionally, it allows you to pass in a title for your project; no matter what doc page you are on, you know exactly where you are in the code hierarchy.
+* It is an improvement on grunt-docco-multi and employs some of the desired end results of grunt-docco-dir.
+* It uses a modified version of docco, called docco-multidir.  
 
 ## Improvements
 * A new docco option called `projectName` is passed into the template for rendering.  This is coupled with other changes in docco-multidir, which put the full path to the file on the template.
 * Updated the code to use docco-multidir as a dependency, and not docco.
+* See docco-multidir for the list of other improvements.
 * Everything else is the same as "grunt-docco-multi" : "~0.0.2"
 
 
